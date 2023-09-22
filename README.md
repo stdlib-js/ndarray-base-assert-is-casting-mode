@@ -45,30 +45,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-base-assert-is-casting-mode
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isCastingMode = require( '@stdlib/ndarray-base-assert-is-casting-mode' );
+isCastingMode = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-casting-mode@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var isCastingMode = require( 'path/to/vendor/umd/ndarray-base-assert-is-casting-mode/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-casting-mode@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isCastingMode;
+})();
+</script>
 ```
 
 #### isCastingMode( value )
@@ -100,8 +108,13 @@ var bool = isCastingMode( 'safe' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var isCastingMode = require( '@stdlib/ndarray-base-assert-is-casting-mode' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-casting-mode@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var bool = isCastingMode( 'none' );
 // returns true
@@ -123,6 +136,11 @@ bool = isCastingMode( '' );
 
 bool = isCastingMode( 'foo' );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
