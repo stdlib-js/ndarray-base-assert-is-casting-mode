@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isCastingMode from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-casting-mode@deno/mod.js';
+import isCastingMode from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-casting-mode@v0.2.2-deno/mod.js';
 ```
 
 #### isCastingMode( value )
@@ -85,7 +85,7 @@ var bool = isCastingMode( 'safe' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isCastingMode from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-casting-mode@deno/mod.js';
+import isCastingMode from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-casting-mode@v0.2.2-deno/mod.js';
 
 var bool = isCastingMode( 'none' );
 // returns true
