@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-casting-mode",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Test if an input value is a supported ndarray casting mode.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-casting-modes": "^0.2.2"
+    "@stdlib/ndarray-casting-modes": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.2.2",
